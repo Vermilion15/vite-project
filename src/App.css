@@ -275,3 +275,13 @@ body {
     width: 40rem;
   }
 }
+
+@media (max-width: 450px){
+  .logo{
+    justify-content: center;
+    align-items: center;
+  }
+  .search{
+    justify-self: center;
+  }
+}
