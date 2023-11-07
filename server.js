@@ -1,8 +1,7 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable no-undef */
 
-const express = require('express')
-const path = require("path");
+
+import express, { static } from 'express';
+import path from "path";
 const app = express()
 
 // #############################################################################
@@ -16,7 +15,7 @@ var options = {
   maxAge: '1m',
   redirect: false
 }
-app.use(express.static('build', options))
+app.use(static('build', options))
 
 const port = process.env.PORT || 3000
 
